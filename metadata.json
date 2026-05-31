@@ -1,0 +1,6 @@
+{
+  "name": "ServendCA - Ensayos No Destructivos",
+  "description": "Servicios integrales de inspección y Ensayos No Destructivos (END) en Venezuela para la industria de Oil & Gas, Metalurgia y Minería.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
