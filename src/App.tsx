@@ -180,7 +180,7 @@ export default function App() {
           <a href="#welcome" className="flex items-center group">
             <img 
               src={MAIN_INFO.logoUrl} 
-              className="h-24 md:h-32 lg:h-38 w-auto object-contain transition-transform duration-500 group-hover:scale-105" 
+              className="h-14 sm:h-18 md:h-20 lg:h-24 w-auto object-contain transition-transform duration-500 group-hover:scale-105" 
               alt="Logo ServendCA"
               referrerPolicy="no-referrer"
               id="brand-logo-img"
@@ -215,7 +215,7 @@ export default function App() {
       </header>
 
       {/* Hero Slider Section */}
-      <section id="welcome" className="relative h-[650px] md:h-[700px] lg:h-[750px] overflow-hidden bg-[#050f17] z-10 select-none">
+      <section id="welcome" className="relative h-[480px] sm:h-[550px] md:h-[620px] overflow-hidden bg-[#050f17] z-10 select-none">
         
         {/* Slide display with AnimatePresence for silky smooth feel */}
         <AnimatePresence mode="wait">
@@ -266,7 +266,7 @@ export default function App() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.15 }}
-                  className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-white leading-tight uppercase font-extrabold"
+                  className="text-2xl sm:text-4xl lg:text-5xl font-display font-black tracking-tight text-white leading-tight uppercase font-extrabold"
                 >
                   {HERO_SLIDES[currentSlideIndex].title.split(" ").map((word, i) => {
                     if (word === "IN" || word === "SITU" || word === "PROFESIONALES" || word === "REVOLUCIONARIA" || word === "CALIDAD" || word === "CERTIFICADA" || word === "ESTRUCTURAL") {
@@ -283,7 +283,7 @@ export default function App() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="text-sm sm:text-base md:text-lg text-slate-200 font-light max-w-2xl leading-relaxed border-l-4 border-brand-yellow/80 pl-4 lg:pl-6 text-justify"
+                  className="text-xs sm:text-sm md:text-base text-slate-200 font-light max-w-2xl leading-relaxed border-l-4 border-brand-yellow/80 pl-4 lg:pl-6 text-left sm:text-justify"
                 >
                   {HERO_SLIDES[currentSlideIndex].subtitle}
                 </motion.p>
@@ -365,14 +365,14 @@ export default function App() {
       </section>
 
       {/* Section: Who We Are / Objective */}
-      <section id="quienes-somos" className="py-20 px-4 md:px-8 max-w-7xl mx-auto relative z-10 text-slate-800">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <section id="quienes-somos" className="py-12 md:py-16 px-4 md:px-8 max-w-7xl mx-auto relative z-10 text-slate-800">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <div className="lg:col-span-12 text-center max-w-3xl mx-auto mb-6">
-            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-3 border border-brand-yellow/20 font-bold">
+          <div className="lg:col-span-12 text-center max-w-2xl mx-auto mb-4">
+            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-2 border border-brand-yellow/20 font-bold">
               Objetivo Corporativo
             </span>
-            <h2 className="text-3xl md:text-5xl font-display font-extrabold text-[#0a1d2c] mt-2 tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-display font-extrabold text-[#0a1d2c] mt-1.5 tracking-tight">
               Garantía de Integridad Estructural y Calidad
             </h2>
           </div>
@@ -432,18 +432,18 @@ export default function App() {
       </section>
 
       {/* Section: Main NDT Services Grid & Explorer */}
-      <section id="servicios" className="py-20 bg-slate-100 relative border-y border-slate-200 z-10">
+      <section id="servicios" className="py-12 md:py-16 bg-slate-100 relative border-y border-slate-200 z-10">
         
         <div className="max-w-7xl mx-auto px-4">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-3 border border-brand-yellow/30 font-bold">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-2.5 border border-brand-yellow/30 font-bold">
               Portafolio de Inspección Especializada
             </span>
-            <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-display font-black text-slate-900 tracking-tight">
               Nuestros Servicios Profesionales de Ensayos (END)
             </h2>
-            <p className="text-slate-600 mt-4 font-light text-sm md:text-base">
+            <p className="text-slate-600 mt-2 font-light text-xs md:text-sm">
               Haga clic sobre cualquiera de las disciplinas para explorar detalladamente sus alcances técnicos, aplicaciones y normativas de aseguramiento.
             </p>
           </div>
@@ -611,25 +611,25 @@ export default function App() {
       </section>
 
       {/* Dynamic Selector / Recommender Tool: "Buscador de Ensayos Recomendado" */}
-      <section id="ndtsmart" className="py-20 bg-white text-slate-800 overflow-hidden relative border-b border-slate-200">
+      <section id="ndtsmart" className="py-12 md:py-16 bg-white text-slate-800 overflow-hidden relative border-b border-slate-200">
         
         {/* Ambient light accent */}
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center flex-wrap">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center flex-wrap">
             
             {/* Left selector fields column */}
-            <div className="lg:col-span-6 flex flex-col justify-center space-y-6">
+            <div className="lg:col-span-6 flex flex-col justify-center space-y-4">
               
               <div>
                 <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-3 border border-brand-yellow/20 font-bold">
                   Herramienta de Diagnóstico Interactiva
                 </span>
-                <h2 className="text-3xl md:text-5xl font-display font-black text-slate-900 tracking-tight">
+                <h2 className="text-2xl md:text-4xl font-display font-black text-slate-900 tracking-tight">
                   Encuentre su Ensayo <br />
-                  <span className="text-[#0a1d2c] border-b-4 border-brand-yellow pb-1 block md:inline-block">Recomendado</span>
+                  <span className="text-[#0a1d2c] border-b-4 border-brand-yellow pb-0.5 block md:inline-block">Recomendado</span>
                 </h2>
                 <p className="text-slate-600 mt-5 font-light text-sm">
                   ¿Tiene sospechas de fallas en su proyecto? Ajuste los parámetros de abajo para ver al instante qué disciplina de Ensayos No Destructivos se adapta de acuerdo a códigos ASME/API.
@@ -813,14 +813,14 @@ export default function App() {
       </section>
 
       {/* Services Complementarios Section (representing Text Images 3 and 4) */}
-      <section id="servicios-secundarios" className="py-20 bg-slate-100 relative z-10">
+      <section id="servicios-secundarios" className="py-12 md:py-16 bg-slate-100 relative z-10">
         <div className="max-w-7xl mx-auto px-4">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-3 border border-brand-yellow/30 font-bold">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1 rounded w-fit inline-block mb-2 border border-brand-yellow/30 font-bold">
               Servicios Especiales y Consultorías
             </span>
-            <h2 className="text-3xl md:text-5xl font-display font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
               Ingeniería Metalúrgica y Soporte Predictivo
             </h2>
             <p className="text-slate-600 mt-4 font-light text-sm md:text-base">
@@ -884,14 +884,14 @@ export default function App() {
       </section>
 
       {/* Sectores de Aplicaciones (Oil & Gas, Petrochemistry, Mining) */}
-      <section id="sectores" className="py-20 bg-white border-t border-slate-200 relative z-10">
+      <section id="sectores" className="py-12 md:py-16 bg-white border-t border-slate-200 relative z-10">
         <div className="max-w-7xl mx-auto px-4">
           
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1.5 rounded w-fit inline-block mb-3 border border-brand-yellow/30 font-bold">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 px-3 py-1.5 rounded w-fit inline-block mb-2 border border-brand-yellow/30 font-bold">
               Campos de Operación
             </span>
-            <h2 className="text-3xl md:text-5xl font-display font-black text-[#0a1d2c] tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-display font-black text-[#0a1d2c] tracking-tight">
               Sectores Industriales Clave
             </h2>
             <p className="text-slate-650 mt-4 text-sm font-light">
@@ -947,23 +947,23 @@ export default function App() {
       </section>
 
       {/* Interactive Estimator Block: "Interactúa y Estima" */}
-      <section id="estimador" className="py-20 bg-slate-50 relative z-10 text-slate-800 border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="bg-white rounded-3xl p-6 md:p-10 shadow-lg relative overflow-hidden border border-slate-200 hover:border-brand-yellow/30 transition-all duration-300">
+      <section id="estimador" className="py-12 md:py-16 bg-slate-50 relative z-10 text-slate-800 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-3xl p-5 md:p-8 shadow-md relative overflow-hidden border border-slate-200 hover:border-brand-yellow/30 transition-all duration-300">
             
             {/* Visual background */}
             <div className="absolute top-0 right-0 w-80 h-80 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
 
-            <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
-              <div className="md:col-span-7 space-y-4">
+              <div className="md:col-span-7 space-y-3">
                 <span className="text-brand-yellow-dark font-mono text-[10px] uppercase tracking-widest bg-brand-yellow/15 px-3 py-1.5 rounded border border-brand-yellow/20 font-bold">
                   Pre-Estimación de Movilización
                 </span>
-                <h3 className="text-2xl md:text-3.5xl font-display font-black text-[#0a1d2c]">
+                <h3 className="text-xl md:text-3xl font-display font-black text-[#0a1d2c]">
                   Consulte su Proyecto In Situ
                 </h3>
-                <p className="text-slate-600 text-sm font-light leading-relaxed">
+                <p className="text-slate-600 text-xs md:text-sm font-light leading-relaxed">
                   ¿Tiene un estimado preliminar de la envergadura del proyecto? Deslice los selectores para recibir un tiempo de ejecución referencial recomendado en sitio por nuestros inspectores.
                 </p>
 
@@ -1032,21 +1032,104 @@ export default function App() {
         </div>
       </section>
 
+      {/* Seccion: Alianza Estratégica con Power Swift Services C.A. (PSSCA) */}
+      <section id="alianza" className="py-12 md:py-16 bg-white border-y border-slate-200 relative z-10">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <span className="text-slate-600 font-mono text-xs uppercase tracking-widest bg-slate-100 px-3 py-1 rounded w-fit inline-block mb-2 border border-slate-200 font-bold">
+              Cooperación e Integración Industrial
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-[#0a1d2c] tracking-tight">
+              Sinergia y Respaldo Operativo
+            </h2>
+          </div>
+
+          <div className="bg-slate-50 rounded-2xl p-5 md:p-8 border border-slate-200 shadow-md hover:border-brand-yellow/30 transition-all duration-300">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+              
+              {/* Allied Logo Card (Black and White layout, exactly like the image) */}
+              <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center shrink-0 w-full md:w-56 text-center">
+                {/* SVG representing the logo elements correctly */}
+                <svg viewBox="0 0 400 400" className="w-24 h-24 md:w-28 md:h-28 mx-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Concentric rings represent operations */}
+                  <circle cx="200" cy="200" r="185" stroke="#000000" strokeWidth="12" />
+                  <circle cx="200" cy="200" r="160" stroke="#000000" strokeWidth="4" strokeDasharray="8 8" />
+                  
+                  {/* Oil Derrick frame */}
+                  <path d="M140 310 L190 170 H210 L260 310" stroke="#000000" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M165 240 H235 M178 200 H222" stroke="#000000" strokeWidth="6" />
+                  <path d="M140 310 L235 240 M260 310 L165 240" stroke="#000000" strokeWidth="4" />
+                  
+                  {/* Walking beam and horsehead */}
+                  <path d="M100 175 C 90 130, 85 210, 95 215" stroke="#000000" strokeWidth="10" strokeLinecap="round" />
+                  <path d="M110 185 L290 155" stroke="#000000" strokeWidth="14" strokeLinecap="round" />
+                  <path d="M96 215 L96 312" stroke="#000000" strokeWidth="4" />
+                  
+                  {/* Diagonal orbital swoosh */}
+                  <path d="M65 260 C 110 170, 290 110, 335 215 C 345 235, 300 300, 120 295" stroke="#000000" strokeWidth="6" fill="none" strokeLinecap="round" />
+                  
+                  {/* Lightning bolt symbolizing Power & Electrical services */}
+                  <path d="M225 100 L165 220 H215 L175 320 L245 180 H195 L225 100 Z" fill="#000000" stroke="#ffffff" strokeWidth="5" strokeLinejoin="miter" />
+                </svg>
+
+                {/* Typography underneath the vector badge */}
+                <div className="mt-3 space-y-1">
+                  <h4 className="font-display font-medium text-[11px] uppercase tracking-tight text-slate-900 leading-tight">
+                    Power Swift Services C.A.
+                  </h4>
+                  <div className="font-sans font-black text-base tracking-widest text-[#000000] leading-none">
+                    PSSCA
+                  </div>
+                  <div className="font-mono text-[9px] text-slate-500 font-semibold uppercase">
+                    RIF J-507696871
+                  </div>
+                </div>
+              </div>
+
+              {/* Allied Text Description */}
+              <div className="flex-1 space-y-2.5">
+                <div className="inline-flex items-center gap-1.5 px-2 bg-slate-200 border border-slate-300 text-[9px] font-mono text-slate-750 font-bold uppercase rounded">
+                  <span>Alianza Comercial Certificada</span>
+                </div>
+                <h3 className="text-md md:text-lg font-display font-bold text-slate-900 leading-tight">
+                  Soporte Operativo y Logístico Integrado
+                </h3>
+                <p className="text-slate-650 text-xs md:text-sm leading-relaxed text-justify font-light">
+                  Empresa de Servicios Industriales y Petroleros, proveedor de soporte técnico,  Operativo y Logístico en Alianza estratégica con ServENDca para optimizar la operatividad de sus clientes garantizando la continuidad de sus procesos.
+                </p>
+                
+                <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 font-mono pt-1">
+                  <span className="flex items-center gap-1 font-semibold">
+                    <Check className="w-3.5 h-3.5 text-brand-yellow-dark shrink-0" />
+                    Soporte Logístico 24/7
+                  </span>
+                  <span className="flex items-center gap-1 font-semibold">
+                    <Check className="w-3.5 h-3.5 text-brand-yellow-dark shrink-0" />
+                    Aseguramiento Operativo
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section: Contact & Quote Request */}
-      <section id="contacto" className="py-20 bg-slate-100 border-t border-slate-200 relative z-10">
+      <section id="contacto" className="py-12 md:py-16 bg-slate-100 border-t border-slate-200 relative z-10">
         
         <div className="max-w-7xl mx-auto px-4">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
             {/* Left Column: Direct Contact Details & Info Card */}
-            <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
+            <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
               
               <div>
                 <span className="text-brand-yellow-dark font-mono text-xs uppercase tracking-widest bg-brand-yellow/15 text-[#0a1d2c] px-3 py-1 rounded w-fit inline-block mb-3 border border-brand-yellow/30 font-bold">
                   Contacto Directo e In Situ
                 </span>
-                <h2 className="text-3xl md:text-5xl font-display font-black text-[#0a1d2c] tracking-tight">
+                <h2 className="text-2xl md:text-4xl font-display font-black text-[#0a1d2c] tracking-tight">
                   Escríbanos Hoy Mismo
                 </h2>
                 <p className="text-slate-600 mt-4 text-sm md:text-base font-light leading-relaxed">
@@ -1388,15 +1471,7 @@ export default function App() {
           
           {/* 1. Large Brand Logo Panel */}
           <div className="md:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="bg-[#0a1d2c] border border-brand-yellow/15 p-1 rounded-lg">
-                <img 
-                  src={MAIN_INFO.logoUrl} 
-                  className="h-16 w-auto" 
-                  alt="Logo ServendCA Footer" 
-                  referrerPolicy="no-referrer"
-                />
-              </div>
+            <div className="flex items-center">
               <div>
                 <span className="block font-display font-extrabold text-lg text-white tracking-widest uppercase">
                   SERVEND<span className="text-brand-yellow">CA</span>
