@@ -58,7 +58,7 @@ export default function App() {
       secondaryText: "Solicitar Inspección"
     },
     {
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200",
+      image: "https://i.postimg.cc/xCwvBfNK/image.png",
       badge: "TECNOLOGÍA DE VANGUARDIA DE INSPECCIÓN",
       title: "PREVENCIÓN DE CONTINGENCIAS INDUSTRIALES",
       subtitle: "Detectamos fisuras imperceptibles, porosidades y corrosión interna mediante Ultrasonido Phased Array, Partículas Magnéticas y Líquidos Penetrantes.",
@@ -68,7 +68,7 @@ export default function App() {
       secondaryText: "Agendar Inspección de Campo"
     },
     {
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200",
+      image: "https://i.postimg.cc/5NqBkM9W/image.png",
       badge: "ALCANCE NACIONAL E INTERNACIONAL",
       title: "INGENIERÍA METALÚRGICA Y AUDITORÍA DE CALIDAD",
       subtitle: "Soporte de ingeniería forense en sitio para soldaduras críticas estructurales, calificación de procedimientos WPS/PQR de forma inmediata y profesional.",
@@ -883,6 +883,136 @@ export default function App() {
         </div>
       </section>
 
+      {/* Seccion: Inspección Especializada de Composición (PMI) */}
+      <section id="pmi" className="py-12 md:py-16 bg-slate-50 relative z-10 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-[#0a1d2c] text-white rounded-2xl p-6 md:p-10 border border-brand-yellow/30 shadow-xl transition-all duration-300 relative overflow-hidden">
+            {/* Ambient light accent */}
+            <div className="absolute -bottom-10 -right-10 w-44 h-44 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 relative z-10">
+              
+              {/* Image Column */}
+              <div className="w-full md:w-2/5 shrink-0">
+                <div className="relative rounded-xl overflow-hidden border-2 border-brand-yellow/40 shadow-lg group">
+                  <img 
+                    src="https://i.postimg.cc/Y2QYhwW4/image.png" 
+                    alt="Inspección por PMI" 
+                    className="w-full h-auto object-cover max-h-[220px] md:max-h-none transition-transform duration-500 group-hover:scale-103"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-3 left-3 bg-brand-yellow text-[#0a1d2c] font-mono text-[9px] font-bold px-2.5 py-0.5 rounded tracking-widest uppercase">
+                    PMI Especializado
+                  </span>
+                </div>
+              </div>
+
+              {/* Text Column */}
+              <div className="flex-1 space-y-4">
+                <div className="space-y-1.5">
+                  <span className="text-brand-yellow font-mono text-[10px] tracking-widest uppercase font-bold block">
+                    Identificación Positiva de Materiales
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-display font-black tracking-tight text-white uppercase leading-tight">
+                    Inspección por PMI <br className="hidden md:inline" />
+                    y Fluorescencia de Rx
+                  </h3>
+                </div>
+
+                <p className="text-slate-300 text-xs md:text-sm leading-relaxed text-justify font-light">
+                  La inspección por PMI para ensayos no destructivos implica la utilización de técnicas como la espectrometria y la fluorescencia de rayos X para verificar la composicion química de materiales. Son esenciales en la industria energética, petroquimica y aeroespacial. PMI permite realizar ensayos in-situ sin necesidad de detener el proceso productivo y ofrece resultados rápidos y fiables.
+                </p>
+
+                <div className="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-slate-400 font-mono">
+                  <span className="flex items-center gap-1.5 font-semibold">
+                    <Check className="w-3.5 h-3.5 text-brand-yellow shrink-0" />
+                    Ensayos In Situ
+                  </span>
+                  <span className="flex items-center gap-1.5 font-semibold">
+                    <Check className="w-3.5 h-3.5 text-brand-yellow shrink-0" />
+                    Espectrometría Portátil
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seccion: Ensayo de Dureza Superficial */}
+      <section id="dureza" className="py-12 md:py-16 bg-slate-50 relative z-10 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white text-slate-800 rounded-2xl p-6 md:p-10 border border-slate-200 shadow-xl transition-all duration-300 relative overflow-hidden">
+            {/* Ambient light accent */}
+            <div className="absolute -top-10 -left-10 w-44 h-44 bg-brand-yellow/5 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-8 relative z-10">
+              
+              {/* Image Column */}
+              <div className="w-full md:w-2/5 shrink-0">
+                <div className="relative rounded-xl overflow-hidden border-2 border-slate-200 shadow-lg group">
+                  <img 
+                    src="https://i.postimg.cc/KYd389cb/image.png" 
+                    alt="Ensayo de Dureza" 
+                    className="w-full h-auto object-cover max-h-[220px] md:max-h-none transition-transform duration-500 group-hover:scale-103"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  <span className="absolute bottom-3 left-3 bg-[#0a1d2c] text-white font-mono text-[9px] font-bold px-2.5 py-0.5 rounded tracking-widest uppercase">
+                    Ensayo de Dureza
+                  </span>
+                </div>
+              </div>
+
+              {/* Text Column */}
+              <div className="flex-1 space-y-4">
+                <div className="space-y-1.5">
+                  <span className="text-brand-yellow-dark font-mono text-[10px] tracking-widest uppercase font-bold block">
+                    Determinación de Dureza Superficial
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-display font-black tracking-tight text-[#0a1d2c] uppercase leading-tight">
+                    Ensayo de Dureza <br className="hidden md:inline" />
+                    en Materiales Metálicos
+                  </h3>
+                </div>
+
+                <p className="text-slate-650 text-xs md:text-sm leading-relaxed text-left sm:text-justify font-light">
+                  Este tipo de ensayos determina la dureza superficial de los materiales metálicos, de uniones soldadas, piezas en general, con o sin tratamiento termico. Este ensayo no destructivo es aplicable en materiales bases, soldaduras.
+                </p>
+
+                {/* Hardness Scales list */}
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2">
+                  <span className="text-slate-900 font-mono text-[10px] font-bold uppercase tracking-wider block">
+                    Escala de dureza:
+                  </span>
+                  <div className="grid grid-cols-2 gap-2 text-xs text-slate-700 font-medium">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-brand-yellow shrink-0"></span>
+                      <span><strong>HV:</strong> Vickers</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-brand-yellow shrink-0"></span>
+                      <span><strong>HB:</strong> Brinell</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-brand-yellow shrink-0"></span>
+                      <span><strong>HRB:</strong> Rockwell B</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-brand-yellow shrink-0"></span>
+                      <span><strong>HTC:</strong> Rockwell C</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Sectores de Aplicaciones (Oil & Gas, Petrochemistry, Mining) */}
       <section id="sectores" className="py-12 md:py-16 bg-white border-t border-slate-200 relative z-10">
         <div className="max-w-7xl mx-auto px-4">
@@ -1176,7 +1306,7 @@ export default function App() {
                   <div>
                     <span className="block text-xs uppercase tracking-wider text-slate-500 font-bold font-mono">Instagram Oficial</span>
                     <a 
-                      href={`https://instagram.com/${MAIN_INFO.contact.instagram}`} 
+                      href="https://instagram.com/servendca" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="text-base font-display font-bold text-[#0a1d2c] hover:text-brand-yellow transition-colors block mt-0.5"
@@ -1432,7 +1562,7 @@ export default function App() {
         
         {/* Floating Instagram */}
         <a 
-          href={`https://instagram.com/${MAIN_INFO.contact.instagram}`}
+          href="https://instagram.com/servendca"
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-gradient-to-tr from-[#fbc122] to-[#e0aa14] hover:scale-110 active:scale-95 text-brand-blue p-3.5 rounded-full shadow-2xl transition-all duration-300 group relative"
@@ -1486,7 +1616,7 @@ export default function App() {
 
             <div className="flex items-center gap-3 pt-2">
               <a 
-                href={`https://instagram.com/${MAIN_INFO.contact.instagram}`}
+                href="https://instagram.com/servendca"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#0a1d2c] hover:bg-brand-yellow hover:text-brand-blue text-brand-yellow p-2.5 rounded-lg border border-brand-yellow/15 transition-colors"
@@ -1561,7 +1691,7 @@ export default function App() {
         {/* Bottom copyright segment */}
         <div className="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-slate-800/80 text-center text-xs text-gray-500">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p>© {new Date().getFullYear()} Servicios de Ensayos No Destructivos C.A. (ServendCA). Todos los derechos reservados.</p>
+            <p>© {new Date().getFullYear()} Servicios de Ensayos No Destructivos C.A. (ServendCA). Todos los derechos reservados. | Hecho por Legaint Corporation</p>
             <p className="font-mono text-[10px] text-gray-600">
               Desarrollado bajo Códigos de Integridad y Ensayos No Destructivos Venezolanos
             </p>
