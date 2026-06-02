@@ -38,7 +38,7 @@ export interface Sector {
 export const MAIN_INFO = {
   name: "Servicios de Ensayos No Destructivos C.A.",
   shortName: "ServendCA",
-  logoUrl: "https://i.postimg.cc/4xhpsKbC/logoweb.png",
+  logoUrl: "https://i.postimg.cc/SRjWXXFx/logoweb2.png",
   slogan: "Ensayos No Destructivos para la Industria de Oil & Gas, Metalurgia y Minería con resultados in situ.",
   objective: "La compañía tendrá como objeto principal la prestación de servicios integrales de inspección y Ensayos No Destructivos (END) orientados a evaluar la integridad mecánica, seguridad y de calidad de los materiales, equipos, componentes y estructuras, sin alterar sus propiedades físicas, químicas o funcionales. Esto incluye de manera enunciativa más no limitativa, la aplicación de técnicas de inspección tales como Inspección Visual, Ultrasonido Convencional, Arreglo de Fases, Partículas Magnéticas y Líquidos Penetrantes, orientados a la detección oportuna de fisuras, porosidades, falta de penetración, socavaciones y/o corrosión.",
   contact: {
